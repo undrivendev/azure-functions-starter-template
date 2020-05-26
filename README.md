@@ -4,8 +4,8 @@ I was unhappy with the default Azure Functions template and I was constantly fin
 This repo can be used as a starting point for new Azure Functions solution: just rename some folders, project files, namespaces and you should be good to go.
 
 ## Features
-- Dependency Injection: configured as per [documentation](https://docs.microsoft.com/en-us/azure/azure-functions/functions-dotnet-dependency-injection). Just register your services in the `ConfigureServices` method in the [Startup](src/AzureFunctionStarterTemplate.FunctionHost/Startup.cs) class.
-- Logging: added to the services collection and configured to use the standard .NET Core logging provider.
+- Dependency Injection: configured as per [documentation](https://docs.microsoft.com/en-us/azure/azure-functions/functions-dotnet-dependency-injection). Just register your services in the `Configure` method in the [Startup](src/AzureFunctionsStarterTemplate.FunctionHost/Startup.cs) class.
+- Logging: added to the services collection and configured to use the standard `ILogger<T>` logging provider.
 - Configuration: every parameter in the input trigger and output binding is received using the configuration provider.
 
 
