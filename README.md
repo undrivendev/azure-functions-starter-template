@@ -11,7 +11,7 @@ This repo can be used as a starting point for new Azure Functions solutions: jus
 ## Quickstart
 If you want to test the sample implementation: 
 1. make sure you have already created an Azure Storage account with 2 Azure Storage Queues you can use
-2. modify `InputAzureStorageConnectionString`, `InputAzureStorageQueueName`, `OutputAzureStorageConnectionString`, `OutputAzureStorageQueueName` configuration values in [local.settings.json](src/AzureFunctionsStarterTemplate.FunctionHost/localsettings.json) to point at these queues.
+2. modify `InputAzureStorageConnectionString`, `InputAzureStorageQueueName`, `OutputAzureStorageConnectionString`, `OutputAzureStorageQueueName` configuration values in [local.settings.json](src/AzureFunctionsStarterTemplate.FunctionHost/local.settings.json) to point at these queues.
 3. start the project with `func start` (or with Visual Studio).
 
 ## Sample implementation
