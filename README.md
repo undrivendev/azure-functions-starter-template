@@ -8,6 +8,11 @@ This repo can be used as a starting point for new Azure Functions solutions: jus
 - Logging: added to the services collection and configured to use the standard `ILogger<T>` logging provider. There is also some logging configuration already in the [host.json](src/AzureFunctionsStarterTemplate.FunctionHost/host.json)
 - Configuration: every parameter in the input trigger and output binding is obtained via configuration.
 
+## Quickstart
+If you want to test the sample implementation: 
+1. make sure you have already created an Azure Storage account with 2 Azure Storage Queues you can use
+2. modify `InputAzureStorageConnectionString`, `InputAzureStorageQueueName`, `OutputAzureStorageConnectionString`, `OutputAzureStorageQueueName` configuration values in [localsettings.json](src/AzureFunctionsStarterTemplate.FunctionHost/localsettings.json) to point at these queues.
+3. start the project with `func start` (or with Visual Studio).
 
 ## Sample implementation
 The project structure is composed by the *host* project and the *Domain Layer* (BLL).
